@@ -1,0 +1,32 @@
+1.Strings are immutable 
+
+s = "aBCDEF"
+s = "A" + s[1:]  
+print(s)
+
+     In this s variable is referred to the value "aBCDEF" but in second line due to the modification,it creates a new string and it is referenced by the same variable s. 
+What about the first string and how to access them? Can't access them because if the value can't reference by any variable, then cant access.
+Garbage collector will remove that old object. 
+     What if need to keep two values: Use different variable name.
+
+## Python cannot modify a string,so the operation creates new string.
+
+
+2.String Methods:
+   upper()  -  string.upper()
+   lower()  -  string.lower()
+   split()  -  string.split(separator)
+   title()  -  string.title()
+   capitalize()  - string.capitalize()
+   join()   -   "separator".join(string)
+   replace()  - string.replace(old,new)
+   find()    -  string.find("substring")
+   count()  -  string.count("substring")
+   len()    -  len(string)
+   startswith() - string.startswith("prefix")
+   endswith() - string.endswith("suffix")
+   strip()  - string.strip()
+   casefold() - string.casefold() - It is like lower(), but stronger. It handles some special characters from different languages better.
+   center() - string.center(width,"any character to fill the space")  - make the length of the string as given width and put the string in the center. Keep the extra space in right.
+              But if the given width is less than length of string, then it just returns the original string.
+   
